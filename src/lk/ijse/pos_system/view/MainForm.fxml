@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="404.0" prefWidth="445.0" style="-fx-background-color: rgb(255,255,255,0.5); -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3; -fx-opacity: 0.98;" styleClass="mainPane" stylesheets="@assets/styles/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos_system.controller.MainFormController">
+   <children>
+      <ImageView fitHeight="404.0" fitWidth="445.0" opacity="0.34">
+         <image>
+            <Image url="@assets/images/POSMainForm.jpeg" />
+         </image>
+      </ImageView>
+      <JFXButton id="btnRole" fx:id="btnAdmin" buttonType="RAISED" layoutX="55.0" layoutY="42.0" onAction="#goToAdminLoginFormOnAction" prefHeight="41.0" prefWidth="174.0" style="-fx-background-color: #297F87; -fx-background-radius: 10 0 0 10;" text="Admin" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton id="btnRole" fx:id="btnCashier" buttonType="RAISED" layoutX="229.0" layoutY="42.0" onAction="#goToCashierLoginFormOnAction" prefHeight="41.0" prefWidth="174.0" style="-fx-background-color: #999; -fx-background-radius: 0 10 10 0;" text="Cashier" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="txtUsername" focusColor="#22577a" labelFloat="true" layoutX="58.0" layoutY="167.0" onKeyReleased="#validateFieldOnKeyRelease" prefHeight="26.0" prefWidth="341.0" promptText="Username">
+         <opaqueInsets>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </opaqueInsets>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPassword" focusColor="#22577a" labelFloat="true" layoutX="58.0" layoutY="227.0" onKeyReleased="#validateFieldOnKeyRelease" prefHeight="26.0" prefWidth="341.0" promptText="Password" visible="false" />
+      <MaterialDesignIconView id="img" fill="#297f87" glyphName="ACCOUNT_CIRCLE" layoutX="201.0" layoutY="159.0" size="60" styleClass="img" />
+      <JFXPasswordField fx:id="fieldPassword" focusColor="#22577a" labelFloat="true" layoutX="58.0" layoutY="227.0" onKeyReleased="#validateFieldOnKeyRelease" prefHeight="26.0" prefWidth="341.0" promptText="Password" />
+      <MaterialDesignIconView fx:id="iconHidePassword" glyphName="LOCK_OPEN" layoutX="369.0" layoutY="247.0" onMouseClicked="#hidePasswordOnAction" pickOnBounds="true" size="20">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MaterialDesignIconView>
+      <MaterialDesignIconView fx:id="iconShowPassword" glyphName="LOCK" layoutX="369.0" layoutY="247.0" onMouseClicked="#showPasswordOnAction" pickOnBounds="true" size="20">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MaterialDesignIconView>
+      <MaterialDesignIconView glyphName="ACCOUNT" layoutX="368.0" layoutY="185.0" size="20" />
+      <Label fx:id="lblRegistered" layoutX="131.0" layoutY="350.0" text="Already Registered?" visible="false" />
+      <Label fx:id="lblLogin" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="263.0" layoutY="349.0" onMouseClicked="#displayLoginBtnOnAction" text="Login" textFill="#22577a" underline="true" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="lblNewUser" alignment="CENTER_RIGHT" layoutX="113.0" layoutY="350.0" prefHeight="16.0" prefWidth="131.0" text="New User?" />
+      <Label fx:id="lblSignUp" layoutX="244.0" layoutY="349.0" onMouseClicked="#displaySignUpBtnOnAction" prefHeight="16.0" prefWidth="60.0" text="SignUp" textFill="#22577a" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <JFXButton id="btnSignUp" fx:id="btnSignUp" buttonType="RAISED" layoutX="54.0" layoutY="299.0" onAction="#signUpOnAction" prefHeight="41.0" prefWidth="349.0" style="-fx-background-color: #297F87; -fx-background-radius: 10;" text="SignUp" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton id="btnLogin" fx:id="btnLogin" buttonType="RAISED" layoutX="54.0" layoutY="299.0" onAction="#loginOnAction" prefHeight="41.0" prefWidth="349.0" style="-fx-background-color: #297F87; -fx-background-radius: 10;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <MaterialDesignIconView fx:id="btnClose" glyphName="CLOSE" layoutX="417.0" layoutY="25.0" onMouseClicked="#closeLoginPageOnClick" size="20">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></MaterialDesignIconView>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

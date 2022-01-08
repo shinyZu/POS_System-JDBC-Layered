@@ -1,0 +1,232 @@
+
+.mainPain {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-background-color: transparent;
+}
+/*---------------------------------------------TableView--------------------------------------------------*/
+
+.table-view{
+    -fx-background-color:  #5C8D89;
+    -fx-background-radius: 10;
+}
+
+.table-view .column-header-background{
+    -fx-background-color:   #5C8D89 ;
+    -fx-background-radius: 5;
+}
+
+.table-view:row-selection > .virtual-flow > .clipped-container > .sheet{
+    -fx-background-radius: 80;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: black;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #79ada1 /*#616161*/;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #c8d6e5/*#424242*/;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+
+.table-view .table-row-cell:selected{
+    -fx-background-color:linear-gradient(to left, rgb(117, 208, 187), rgb(30, 111, 92));
+}
+
+.table-view .table-row-cell:selected *{
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background,
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color:  #5C8D89 /*transparent*/;
+}
+
+.table-view > .virtual-flow > .corner{
+    -fx-background-color:   #5C8D89;
+    -fx-background-insets: 0 10 0 0 ;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical > .thumb,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .thumb{
+    -fx-background-color:  white;
+    -fx-opacity: 50%;
+    -fx-background-insets: 5, 0, 0;
+}
+
+.table-view > .column-header-background > .filler {
+    -fx-background-color:  #5C8D89;
+    -fx-background-insets: 10,0,0,0;
+}
+
+/*---------------------------------------------------ComboBox------------------------------------*/
+
+.combo-box {
+    -fx-color: -fx-base;
+    -fx-background-color:dark grey;
+}
+
+.combo-box > .list-cell:focused:filled:selected > .text{
+    -fx-fill: white;
+}
+
+.combo-box:selected {
+    -fx-background-color:transparent;
+}
+
+.combo-box-popup .list-view {
+    -fx-color: -fx-base;
+    -fx-background-color:  #5C8D89;
+
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0 10 10 10, 0 5 5 5, 0 4 4 4;
+    -fx-padding: 0.333333em 0.333333em 0.666667em 0.083333em;
+
+}
+
+.combo-box-popup .list-view .list-cell:filled {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.combo-box > .list-cell:focused:filled:selected {
+    -fx-background-color: transparent;
+}
+
+.combo-box:disabled > .list-cell:disabled:focused:filled:selected > .text:disabled {
+    -fx-fill: white;
+    -fx-font-weight: bold;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover {
+    -fx-background-color:linear-gradient(to left, rgb(117, 208, 187), rgb(30, 111, 92));
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: transparent;
+}
+
+.combo-box > .combo-box-popup > .list-view > .virtual-flow > .scroll-bar:vertical > .track,
+.combo-box > .combo-box-popup > .list-view > .virtual-flow > .scroll-bar:vertical > .track-background {
+    -fx-background-color:  #5C8D89;
+}
+
+.combo-box > .combo-box-popup > .list-view > .virtual-flow > .scroll-bar:vertical > .thumb {
+    -fx-background-color:  white;
+    -fx-opacity: 50%;
+    -fx-background-insets: 5, 0, 0;
+}
+
+.combo-box > .arrow-button {
+    -fx-background-color:   #5C8D89;
+}
+
+.combo-box > .arrow-button > .arrow{
+    -fx-background-color: white;
+}
+
+/*--------------------------------------------------ListView------------------------------------*/
+
+.list-view {
+    -fx-background-color: #5C8D89;
+}
+
+.list-view > .virtual-flow > .clipped-container > .sheet{
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+
+.list-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.list-view > .virtual-flow > .scroll-bar:vertical > .track,
+.list-view > .virtual-flow > .scroll-bar:horizontal > .track-background,
+.list-view > .virtual-flow > .scroll-bar:vertical > .track-background {
+    -fx-background-color: #5C8D89 /*transparent*/;
+}
+
+.list-view > .virtual-flow > .scroll-bar:horizontal > .thumb,
+.list-view > .virtual-flow > .scroll-bar:vertical > .thumb{
+    -fx-background-color:  white;
+    -fx-opacity: 50%;
+    -fx-background-insets: 5, 0, 0;
+}
+
+.list-view > .virtual-flow > .corner{
+    -fx-background-color:  #5C8D89;
+}
+
+.list-view > .virtual-flow {
+    -fx-background-color:  transparent;
+}
+
+.list-cell:empty {
+    -fx-background-color:  transparent;
+}
+
+.list-cell:filled:even {
+    -fx-background-color: #5C8D89;
+}
+
+.list-cell:filled:odd {
+    -fx-background-color:  #5C8D89;
+}
+
+.list-view .list-cell:filled:hover {
+    -fx-background-color:linear-gradient(to left, rgb(117, 208, 187), rgb(30, 111, 92));
+}
+
+.list-view .list-cell:filled:selected *{
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+/*------------------------------------------------Scroll Pane Scroll Bar----------------------------------*/
+
+.scroll-pane > .scroll-bar:vertical > .track,
+.scroll-pane > .scroll-bar:horizontal > .track,
+.scroll-pane > .scroll-bar:vertical > .track-background,
+.scroll-pane > .scroll-bar:horizontal > .track-background {
+    -fx-background-color:#5C8D89 /*transparent*/;
+}
+
+.scroll-pane > .scroll-bar:horizontal > .thumb,
+.scroll-pane > .scroll-bar:vertical > .thumb{
+    -fx-background-color:  white;
+    -fx-opacity: 50%;
+    -fx-background-insets: 5, 0, 0;
+}
+
+.scroll-pane > .corner{
+    /*  -fx-background-color:  #bdc3c7;*/
+    -fx-background-color: #5C8D89;
+}
+
+/*---------------------------------------------------------TabPane---------------------*/
+.tab-pane:top > .tab-header-area > .headers-region > .tab:top {
+    -fx-background-color: #5C8D89;
+}
+
+.tab-pane:top > .tab-header-area > .headers-region > .tab:selected:top {
+    -fx-background-color: rgba(144, 193, 144, 0.59);
+}
